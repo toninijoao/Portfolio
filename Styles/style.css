@@ -1,0 +1,230 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #FF00BE;
+    font-family: "Montserrat", sans-serif;
+    color: black;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    padding: 0.3% 2%;  
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+.logo img{
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.logo a:hover img{
+    transform: scale(1.1);
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+nav a{
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+    margin-left: 30px;
+    
+}
+
+nav a:hover{
+    color: #ff00c8;
+}
+
+nav a:hover {
+    display: block;
+    filter: drop-shadow(0 0 10px #fffdef);
+}
+
+.foto img{
+    width: 500px;
+    height: 638px;
+    border-radius: 7px;
+    box-shadow: 8px 8px 0 black;
+    border: 1px solid black;
+    margin-right: 200px;
+    margin-top: 30px;
+    transition: transform 0.3s ease;
+}
+
+.foto img:hover{
+    transform: scale(1.05);
+}
+
+main{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 80px;
+    gap: 40px;
+}
+
+.esquerda{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    max-width: 50%;
+    align-items: flex-start;
+    margin-left: 150px;
+}
+
+.texto{
+    font-size: 35px;
+    font-weight: 800;
+    margin-bottom: 100px;
+    line-height: 1.05;
+}
+
+.links{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.links h1{
+    color: white;
+    background-color: #000;
+    border-radius: 10px;
+    padding: 6px 14px;
+    font-size: 40px;
+    font-weight: 700;
+    margin: 0 0 10px 0;
+    box-shadow: 5px 5px 0 white;
+    border: 1px solid black;
+    width: fit-content;
+}
+
+
+
+.links .social{
+    margin-top: 20px;
+    display:  inline-flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+    transition: transform 0.15s ease;
+    color: white;
+}
+
+.links .social:hover{
+    transform: translateX(10px);
+}
+
+.links i{
+    width: 32px;
+    height: 32px;
+    font-size: 42px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    color: white;
+}
+
+.links .social p{
+    margin: 0;
+    font-weight: 500;
+}
+
+.links a p{
+    margin: 0;
+}
+
+.rodape{
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 24px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 17px;
+}
+
+.sobre p{
+    font-family: "Montserrat", sans-serif;
+    font-size: 25px;
+    color: #474A57;
+    line-height: 1.6;
+    text-align: left;
+    max-width: 600px;
+    margin-left: -40px;
+}
+
+h1.sobre{
+    color: black;
+    font-size: 50px;
+    font-weight: 800;
+    margin-bottom: 35px;
+    line-height: 1.05;
+}
+
+.imagens img{
+    width: 160px;
+    height: 160px;
+    border-radius: 8px;
+}
+
+.imagens{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+
+    transition: transform 0.3s ease;
+}
+
+.imagens .spotifyimg{
+    box-shadow: 5px 5px 0 white;
+}
+
+.imagens .bradescoimg{
+    box-shadow: 5px 5px 0 white;
+}
+
+.imagens a:hover{
+    transform: scale(1.1);
+}
+
+.projetos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 40px;
+    padding: 60px 20px;
+}
+
+.esquerda{
+    margin: 0;
+    max-width: 100%;
+    align-items: center;
+    text-align: center;
+}
+
+.bodyprojeto{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main.projetos{
+    flex: 1;
+}
