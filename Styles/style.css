@@ -228,3 +228,113 @@ h1.sobre{
 main.projetos{
     flex: 1;
 }
+
+@media (max-width: 1024){
+    main{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 40px 30px;
+        gap: 30px;
+    }
+
+    .foto img{
+        width: 350px;
+        height: auto;
+        margin: 25 px 0;
+    }
+
+    .esquerda {
+        max-width: 90%;
+        margin: 0;
+        text-align: center;
+        align-items: center;
+    }
+
+    .texto {
+        font-size: 28px;
+        margin-bottom: 50px;
+    }
+
+    .links h1 {
+        font-size: 28px;
+    }
+
+    .links .social p{
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 600px)
+{
+    header {
+        flex-direction: column;
+        gap: 15px;
+        padding: 10px;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    nav a {
+        margin: 0;
+        font-size: 14px;
+    }
+
+    .foto img{
+        width: 250px;
+    }
+
+    .texto {
+        font-size: 22px;
+        margin-bottom: 30px;
+    }
+
+    .links h1 {
+        font-size: 22px;
+        padding: 5px 10px;
+    }
+
+    .sobre p{
+        font-size: 18px;
+        margin-left: 0;
+        text-align: center;
+    }
+
+    h1.sobre {
+        font-size: 32px;
+    }
+
+    .imagens img{
+        width: 120px;
+        height: 120px;
+    }
+}
+
+@media (max-width: 768px){
+    main {
+        flex-direction: column;
+        text-align: center;
+        gap: 30px;
+    }
+
+    .esquerda {
+        margin: 0;
+        max-width: 100%;
+        align-items: center;
+    }
+
+    .foto img {
+    max-width: 90%;
+    height: auto;
+    margin: 0;
+    }
+
+    .texto {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+}
