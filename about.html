@@ -11,12 +11,22 @@
 
 <body>
     <header>
-            <div class="logo"><a href="index.html"><img src="./Assets/logo.png" alt="logo" width="100px" height="100px"></a></div>
-            <nav>
+           <div class="logo"><a href="index.html"><img src="./Assets/logo.png" alt="logo" width="100px" height="100px"></a></div>
+            <nav class="nav-desktop">
                 <a href="index.html">Home</a>
                 <a href="about.html">Sobre Mim</a>
                 <a href="projects.html">Meus Projetos</a>
             </nav>
+
+            <input type="checkbox" id="menu" class="botao-container">
+            <label for="menu" class="menu-label">
+                <i class="fa-solid fa-bars"></i>
+            </label>
+            <ul class="lista-menu">
+                <li class="lista-menu-home"><a href="index.html">Home</a></li>
+                <li class="lista-menu-contato"><a href="about.html">Sobre Mim</a></li>
+                <li class="lista-menu-projetos"><a href="projects.html">Projetos</a></li>
+            </ul>
     </header>  
     
     <main>

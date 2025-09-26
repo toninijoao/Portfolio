@@ -29,7 +29,7 @@ header{
     transform: scale(1.1);
 }
 
-nav{
+.nav-desktop{
     display: flex;
     align-items: center;
     gap: 20px;
@@ -51,6 +51,35 @@ nav a:hover{
 nav a:hover {
     display: block;
     filter: drop-shadow(0 0 10px #fffdef);
+}
+
+.menu-label{
+    display: none;
+}
+
+.lista-menu{
+    display: none;
+    list-style: none;
+    padding: 20px;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: black;
+}
+
+.lista-menu li{
+    margin: 15px 0;
+}
+
+.lista-menu a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.botao-container {
+    position: absolute;
+    opacity: 0;
 }
 
 .foto img{
@@ -229,112 +258,68 @@ main.projetos{
     flex: 1;
 }
 
-@media (max-width: 1024){
-    main{
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        padding: 40px 30px;
-        gap: 30px;
+@media (max-width: 768px) {
+    .nav-desktop {
+        display: none;
     }
 
-    .foto img{
-        width: 350px;
-        height: auto;
-        margin: 25 px 0;
-    }
-
-    .esquerda {
-        max-width: 90%;
-        margin: 0;
-        text-align: center;
-        align-items: center;
-    }
-
-    .texto {
+    .menu-label {
+        display: block;
         font-size: 28px;
-        margin-bottom: 50px;
+        cursor: pointer;
+        color: white;
+        z-index: 1100;
+        padding: 20px;
     }
 
-    .links h1 {
-        font-size: 28px;
-    }
-
-    .links .social p{
-        font-size: 16px;
-    }
-}
-
-@media (max-width: 600px)
-{
-    header {
+    .botao-container:checked ~ .lista-menu {
+        display: flex !important;
         flex-direction: column;
-        gap: 15px;
-        padding: 10px;
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 70%;
+        height: 100vh;
+        background-color: black;
+        padding: 80px 20px 20px;
+        z-index: 1000;
+        box-shadow: -4px 0 12px rgba(0, 0, 0, 0.6);
+        align-items: flex-start;
     }
 
-    nav {
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 10px;
+    .lista-menu li {
+        margin: 20px 0;
+        width: 100%;
     }
 
-    nav a {
-        margin: 0;
-        font-size: 14px;
-    }
-
-    .foto img{
-        width: 250px;
-    }
-
-    .texto {
+    .lista-menu a {
+        color: white;
+        text-decoration: none;
         font-size: 22px;
-        margin-bottom: 30px;
+        font-weight: 600;
     }
 
-    .links h1 {
-        font-size: 22px;
-        padding: 5px 10px;
-    }
-
-    .sobre p{
-        font-size: 18px;
-        margin-left: 0;
-        text-align: center;
-    }
-
-    h1.sobre {
-        font-size: 32px;
-    }
-
-    .imagens img{
-        width: 120px;
-        height: 120px;
-    }
-}
-
-@media (max-width: 768px){
     main {
         flex-direction: column;
+        padding: 40px 20px;
         text-align: center;
-        gap: 30px;
     }
 
     .esquerda {
-        margin: 0;
+        margin-left: 0;
         max-width: 100%;
         align-items: center;
     }
 
-    .foto img {
-    max-width: 90%;
-    height: auto;
-    margin: 0;
+    .sobre p {
+        margin-left: 0;
+        text-align: center;
     }
 
-    .texto {
-        font-size: 24px;
-        margin-bottom: 20px;
+    .foto img {
+        width: 80%;
+        max-width: 350px;
+        height: auto;
+        margin: 0 auto 40px;
     }
 }
